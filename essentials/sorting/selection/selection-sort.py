@@ -23,7 +23,7 @@ def selection_sort2(arr):
   n = len(arr)
   for i in range(n):
     min_index = i   # 현재 위치를 최소값 위치로 가정
-    for j in range(i + 1, n):     # ?
+    for j in range(i + 1, n):     # ? 
       if arr[j] < arr[min_index]:
         min_index = j
       arr[i], arr[min_index] = arr[min_index], arr[i]  # 최소값을 현재 위치로 교환

@@ -20,7 +20,7 @@ def insertion_sort(arr):
         j = i - 1
         # 정렬된 부분의 오른쪽 끝부터 key가 들어갈 위치를 찾음
         while j >= 0 and arr[j] > key:
-            arr[j + 1] = arr[j]
+            arr[j + 1] = arr[j] # key 가 들어갈 자리에 있는 녀석은 뒤로 민다.
             j -= 1
         arr[j + 1] = key  # 찾은 위치에 key를 삽입
     return arr
